@@ -57,6 +57,14 @@ module.exports = {
         openAnalyzer: false,
       },
     },
-    `gatsby-plugin-fontawesome-css`
+    `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/`
+      },
+    },
   ].filter(Boolean),
 }
