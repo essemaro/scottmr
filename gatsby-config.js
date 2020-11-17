@@ -9,7 +9,14 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // Of course you can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitleAlt: `Scott Robertson's Portfolio Site`,
+    siteTitle: `Scott Robertson's Portfolio Site`,
+    siteHeadline: ``,
+    siteUrl: `/`,
+    siteDescription: `Portfolio website of Scott Robertson`,
+    siteLanguage: `en`,
+    siteImage: ``,
+    author: `Scott Robertson`,
+    siteTitleAlt: `Scott M. R. Portfolio`,
   },
   plugins: [
     {
@@ -26,14 +33,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        name: `Scott Robertson's Portfolio`,
+        short_name: `Scott M. R.`,
+        description: `Portfolio website of Scott Robertson`,
         start_url: `/`,
         background_color: `#141821`,
         theme_color: `#f6ad55`,
         display: `standalone`,
-        icons: [
+        /* icons: [
           {
             src: `/android-chrome-192x192.png`,
             sizes: `192x192`,
@@ -44,7 +51,7 @@ module.exports = {
             sizes: `512x512`,
             type: `image/png`,
           },
-        ],
+        ], */
       },
     },
     `gatsby-plugin-offline`,
